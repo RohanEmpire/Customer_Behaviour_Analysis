@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 from numpy import outer
-from PIL import Image
 
 
 #m = open("‪‪C:/Users/ROHAN'S/Downloads/Rohan_Project/customer.pkl","rb")
@@ -28,9 +27,8 @@ def web_app():
     # Customer Behaviour Analysis with Machine Learning
     ## This app predicts to which category a customer belongs too
    """)
-    image = Image.open('customer_pic.png')
 
-    st.image(image, caption='Customer Behaviour Analysis')
+    st.image("""https://cdn.wperp.com/uploads/2020/07/customer-behavior-analysis-A-guide-for-entrepreneurs-customer-behavior-analysis-%E2%80%93-1-1536x614.png""")
     st.header("User Details")
     st.subheader("Kindly Enter The following Details in order to make a prediction")
 
