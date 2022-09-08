@@ -7,3 +7,5 @@ sklearn
 joblib
 streamlit
 PIL
+seaborn
+datetime
