@@ -56,13 +56,13 @@ def web_app():
         result = model.predict([[INCOME,AGE,Month_Customer,TotalSpendings,
                                 Children]])
         if result == 0:
-            result = "CATEGORY_D"
+            result = "ALPHA"
         elif result == 1: 
-            result = "CATEGORY_A"
+            result = "BETA"
         elif result == 2: 
-            result = "CATEGORY_B"
+            result = "GAMMA"
         else : 
-            result = "CATEGORY_C"
+            result = "OMEGA"
         
         
         st.text_area(label='CATEGORY CUSTOMER BELONGS TO:- ',value=result , height= 100)
