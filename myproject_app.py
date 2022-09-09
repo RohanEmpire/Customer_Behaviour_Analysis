@@ -36,22 +36,22 @@ def web_app():
 
      
     st.write("""
-    # Customer Behaviour Analysis Using Machine Learning
+    # CUSTOMER BEHAVIOUR ANALYSIS USING MACHINE LEARNING
     ## 
    """)
 
     st.image("""https://cdn.wperp.com/uploads/2020/07/customer-behavior-analysis-A-guide-for-entrepreneurs-customer-behavior-analysis-%E2%80%93-1-1536x614.png""")
-    st.header("This App Let You Know To Which Segement A Customer Belongs To")
-    st.subheader("Fill The Details Below")
+    st.header("THIS APP LETS YOU KNOW TO WHICH SEGEMENT YOU BELONGS TO)
+    st.subheader("FILL THE DETAILS BELOW")
 
     INCOME = st.number_input("INCOME",1500,120000)
     AGE = st.number_input("AGE",19,80)
     #AGE = st.sidebar.slider('AGE', min_value=19, max_value=80, step=1)
-    Month_Customer = st.number_input("Month_Customer",12,50)
-    TotalSpendings = st.number_input("TotalSpendings",5,3000)
-    Children = st.radio("Children",("0","1","2","3"))
+    Month_Customer = st.number_input("MONTHS",12,50)
+    TotalSpendings = st.number_input("SPENDINGS",5,3000)
+    Children = st.radio("CHIDREN",("0","1","2","3"))
     
-    if st.button("Press here to make Prediction"):
+    if st.button("PRESS HERE TO KNOW THE CATEGORY"):
         
         result = model.predict([[INCOME,AGE,Month_Customer,TotalSpendings,
                                 Children]])
