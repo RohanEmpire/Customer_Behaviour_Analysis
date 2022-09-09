@@ -19,6 +19,21 @@ from numpy import outer
 
 #model = joblib.load("‪C:\Users\ROHAN'S\Downloads\customer.pkl")
 model = joblib.load('customer.pkl')
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://in.pinterest.com/offsite/?token=422-489&url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fee%2F50%2Fde%2Fee50dec983d90280a90a40afbe5be29d.jpg&pin=313633561521340110&client_tracking_params=CwABAAAAEDgyNDg5OTk3MjI1NzU5MjgLAAcAAAAPdW5rbm93bi91bmtub3duAA&aux_data=%7B%7D");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
 
 
 def web_app():
@@ -53,7 +68,7 @@ def web_app():
             result = "CATEGORY_C"
         
         
-        st.text_area(label='Category belongs to:- ',value=result , height= 100)
+        st.text_area(label='Category The Customer belongs to:- ',value=result , height= 100)
          
     
     
