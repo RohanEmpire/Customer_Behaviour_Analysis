@@ -21,6 +21,20 @@ from numpy import outer
 model = joblib.load('customer.pkl')
 
 def web_app():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+     
     st.write("""
     # Customer Behaviour Analysis Using Machine Learning
     ## 
