@@ -19,26 +19,21 @@ from numpy import outer
 
 #model = joblib.load("‪C:\Users\ROHAN'S\Downloads\customer.pkl")
 model = joblib.load('customer.pkl')
-def get_base64(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://in.pinterest.com/offsite/?token=422-489&url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fee%2F50%2Fde%2Fee50dec983d90280a90a40afbe5be29d.jpg&pin=313633561521340110&client_tracking_params=CwABAAAAEDgyNDg5OTk3MjI1NzU5MjgLAAcAAAAPdW5rbm93bi91bmtub3duAA&aux_data=%7B%7D");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
-
-def set_background(png_file):
-    bin_str = get_base64(png_file)
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("data:image/png;base64,%s");
-    background-size: cover;
-    }
-    </style>
-    ''' % bin_str
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-set_background('https://in.pinterest.com/offsite/?token=422-489&url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fee%2F50%2Fde%2Fee50dec983d90280a90a40afbe5be29d.jpg&pin=313633561521340110&client_tracking_params=CwABAAAAEDgyNDg5OTk3MjI1NzU5MjgLAAcAAAAPdW5rbm93bi91bmtub3duAA&aux_data=%7B%7D')
-
+add_bg_from_url() 
 
 def web_app():
     st.write("""
