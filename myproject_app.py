@@ -19,7 +19,9 @@ from numpy import outer
 
 #model = joblib.load("‪C:\Users\ROHAN'S\Downloads\customer.pkl")
 model = joblib.load('customer.pkl')
-def add_bg_from_url():
+
+
+def web_app():
     st.markdown(
          f"""
          <style>
@@ -32,11 +34,6 @@ def add_bg_from_url():
          """,
          unsafe_allow_html=True
      )
-
-add_bg_from_url() 
-
-
-def web_app():
 
     st.write("""
     # Customer Behaviour Analysis Using Machine Learning
