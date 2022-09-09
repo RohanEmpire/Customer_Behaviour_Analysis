@@ -25,7 +25,7 @@ def web_app():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+             background-image: url("https://pbs.twimg.com/media/C93lSOuV0AAa2g6?format=jpg&name=900x900");
              background-attachment: fixed;
              background-size: cover
          }}
