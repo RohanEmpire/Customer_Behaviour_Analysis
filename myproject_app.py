@@ -25,7 +25,7 @@ def web_app():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg");
+             background-image: url("https://www.rd.com/wp-content/uploads/2020/04/GettyImages-1093840488-5-scaled.jpg?resize=1024,683");
              background-attachment: fixed;
              background-size: cover
          }}
