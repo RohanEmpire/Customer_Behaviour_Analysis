@@ -65,7 +65,7 @@ def web_app():
             result = "CATEGORY_C"
         
         
-        st.text_area(label='Category The Customer belongs to:- ',value=result , height= 100)
+        st.text_area(label='CATEGORY CUSTOMER BELONGS TO:- ',value=result , height= 100)
          
     
     
