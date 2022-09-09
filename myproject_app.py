@@ -41,7 +41,7 @@ def web_app():
    """)
 
     st.image("""https://cdn.wperp.com/uploads/2020/07/customer-behavior-analysis-A-guide-for-entrepreneurs-customer-behavior-analysis-%E2%80%93-1-1536x614.png""")
-    st.header("THIS APP LETS YOU KNOW TO WHICH SEGEMENT YOU BELONGS TO")
+    st.header("THIS APP LETS YOU KNOW TO WHICH SEGEMENT YOU BELONGS TO -(ALPHA/BETA/GAMMA/OMEGA)")
     st.subheader("FILL THE DETAILS BELOW")
 
     INCOME = st.number_input("INCOME",1500,120000)
