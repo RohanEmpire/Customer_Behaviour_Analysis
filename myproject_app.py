@@ -24,19 +24,20 @@ model = joblib.load('customer.pkl')
 def web_app():
 
     st.write("""
-    # Customer Behaviour Analysis with Machine Learning
-    ## This app predicts to which category a customer belongs too
+    # Customer Behaviour Analysis Using Machine Learning
+    ## 
    """)
 
     st.image("""https://cdn.wperp.com/uploads/2020/07/customer-behavior-analysis-A-guide-for-entrepreneurs-customer-behavior-analysis-%E2%80%93-1-1536x614.png""")
-    st.header("User Details")
-    st.subheader("Kindly Enter The following Details in order to make a prediction")
+    st.header("This App Let You Know To Which Segement A Customer Belongs To")
+    st.subheader("Fill The Details Below")
 
     INCOME = st.number_input("INCOME",1500,120000)
-    AGE = st.number_input("AGE",19,80)
+    #AGE = st.number_input("AGE",19,80)
+     AGE = st.sidebar.slider('AGE', min_value=19, max_value=80, step=1)
     Month_Customer = st.number_input("Month_Customer",12,50)
     TotalSpendings = st.number_input("TotalSpendings",5,3000)
-    Children = st.number_input("Children",0,3)
+    Children = st.radio("Children",("0","1","2","3"))
     
     if st.button("Press here to make Prediction"):
         
