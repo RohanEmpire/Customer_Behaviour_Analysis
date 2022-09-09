@@ -33,7 +33,8 @@ def web_app():
     st.subheader("Fill The Details Below")
 
     INCOME = st.number_input("INCOME",1500,120000)
-    AGE = st.sidebar.slider('AGE', min_value=19, max_value=80, step=1)
+    AGE = st.number_input("AGE",19,80)
+    #AGE = st.sidebar.slider('AGE', min_value=19, max_value=80, step=1)
     Month_Customer = st.number_input("Month_Customer",12,50)
     TotalSpendings = st.number_input("TotalSpendings",5,3000)
     Children = st.radio("Children",("0","1","2","3"))
