@@ -25,7 +25,7 @@ def web_app():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.rd.com/wp-content/uploads/2020/04/GettyImages-1093840488-5-scaled.jpg?resize=1024,683");
+             background-image: url("https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
              background-attachment: fixed;
              background-size: cover
          }}
